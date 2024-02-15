@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: rgb(247,192,236);
+  background: linear-gradient(180deg, rgba(247,192,236,1) 0%, rgba(255,171,208,1) 44%, rgba(250,174,123,1) 100%);
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.svimg{
+  width:50%;
+  min-width: 133px;
+  max-width: 156px;
+  filter: invert(100%);
+  transition: width 1s;
+}
+
+.svimg:hover{
+  animation-name: latiendo;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes latiendo{
+  0%{
+    width: 156px;
+  }
+  50%{
+    width: 133px;
+  }
+  100%{
+    width: 156px;
+  }
+}
